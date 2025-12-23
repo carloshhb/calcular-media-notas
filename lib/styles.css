@@ -1,0 +1,122 @@
+#painel-falcao {
+  position: fixed;
+  top: 80px;
+  /* Um pouco mais para baixo para não cobrir cabeçalho */
+  right: 20px;
+  background: #1a1a1d;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  min-width: 240px;
+  text-align: center;
+  border-left: 5px solid #3498db;
+  transition: all 0.3s ease;
+  display: none;
+  /* Animação de entrada */
+  animation: fadeIn 0.3s;
+}
+
+#painel-falcao h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #bdc3c7;
+}
+
+#painel-falcao .valor-destaque {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 10px 0;
+  color: #ecf0f1;
+}
+
+#painel-falcao .btn-acao {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 10px;
+  transition: background 0.2s;
+  font-size: 13px;
+}
+
+#painel-falcao .btn-acao:hover {
+  background-color: #2980b9;
+}
+
+#painel-falcao .btn-acao:disabled {
+  background-color: #7f8c8d;
+  cursor: not-allowed;
+}
+
+#painel-falcao .status {
+  font-size: 11px;
+  margin-top: 8px;
+  color: #95a5a6;
+  font-style: italic;
+}
+
+/* --- BOTÃO DE FECHAR (X) --- */
+.btn-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #7f8c8d;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-close:hover {
+  color: #e74c3c;
+}
+
+/* --- BOTÃO FLUTUANTE (MINIMIZADO) --- */
+#btn-float-falcao {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #1a1a1d;
+  border: 2px solid #3498db;
+  border-radius: 50%;
+  color: #3498db;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999999;
+  display: flex;
+  /* Começa escondido */
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+#btn-float-falcao:hover {
+  transform: scale(1.1);
+  background-color: #3498db;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

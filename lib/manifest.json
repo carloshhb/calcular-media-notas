@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Calculadora de Média - Turma Falcão",
+  "version": "1.0",
+  "description": "Calcula a média real das disciplinas (excluindo zeros) no portal do aluno.",
+  "content_scripts": [
+    {
+      "matches": ["https://acadepol.policiacivil.rn.gov.br/AcadSis/Home/NotaFrequencia*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
