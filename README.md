@@ -6,6 +6,8 @@ Uma extensão para Google Chrome desenvolvida para auxiliar os alunos da **Turma
 
 A ferramenta automatiza a expansão da tabela de notas, filtra disciplinas não cursadas (notas zeradas) e apresenta a média aritmética em um painel visual flutuante.
 
+Download: https://github.com/carloshhb/calcular-media-notas/releases/download/1.0.0/calculadora-media-notas.zip
+
 ---
 
 ## 🚀 Funcionalidades
